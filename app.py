@@ -233,7 +233,7 @@ def deleteMovement(id):
         db.session.commit()
         return redirect("/movements/")
     except:
-        return "There was an issue while deleteing the Prodcut Movement"
+        return "Could not delete product movement, please try again"
 
 @app.route("/product-balance/", methods=["POST", "GET"])
 def productBalanceReport():
